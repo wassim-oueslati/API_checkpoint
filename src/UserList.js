@@ -10,7 +10,12 @@ function UserList() {
       }, []);
     return (
         <div>
-            <code> {JSON.stringify(listOfUSer)}</code>
+            <ul>
+                {listOfUSer.map((list)=>(
+                    <li key={list.id} >{list.name}</li>
+                ))}
+            </ul>
+             
             
         </div>
     )

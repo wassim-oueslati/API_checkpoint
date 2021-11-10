@@ -1,1 +1,14 @@
+table{
+    width: 600px;
+    margin: 0 auto; 
+}
 
+tr, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+.name{
+    color: darkgoldenrod;
+    font-size: 30px; 
+}

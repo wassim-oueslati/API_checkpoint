@@ -10,11 +10,20 @@ function UserList() {
       }, []);
     return (
         <div>
-            <ul>
+            <table>
+                <tr>
+                    <th className="name">Name</th>
+                    <th className="name">User Name</th>
+                </tr>
                 {listOfUSer.map((list)=>(
-                    <li key={list.id} >{list.name}</li>
+                    <tr key={list.id}>
+                       <th>{list.name}</th>
+                       <th>{list.username}</th>
+                    </tr>
+                    
                 ))}
-            </ul>
+
+            </table>
              
             
         </div>
